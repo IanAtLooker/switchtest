@@ -8,12 +8,12 @@
   elements:
 
   - name: my_tile
-  title: Touchdowns per Season
-  type: table
-  model: nfl
-  explore: play_player
-  dimensions: [game.season_year]
-  measures: [play_player.rushing_touchdowns]
-  sorts: [play_player.rushing_touchdowns desc]
-  limit: 500
-  
+    title: Touchdowns per Season
+    type: table
+    model: nfl
+    explore: play_player
+    dimensions: [game.season_year]
+    measures: [play_player.rushing_touchdowns]
+    sorts: [play_player.rushing_touchdowns desc]
+    limit: 500
+    
