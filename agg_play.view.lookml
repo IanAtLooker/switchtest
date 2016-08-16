@@ -399,4 +399,8 @@
   - measure: count
     type: count
     drill_fields: [drive.drive_id, play.play_id]
+    
+  - measure: passing_touchdowns
+    type: sum
+    sql: ${passing_tds}
 

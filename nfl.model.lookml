@@ -14,6 +14,16 @@
       type: left_outer 
       sql_on: ${agg_play.play_id} = ${play.play_id}
       relationship: many_to_one
+    
+    - join: play_player
+      type: left_outer 
+      sql_on: ${play_player.play_id} = ${play.play_id}
+      relationship: many_to_one
+      
+    - join: player
+      relationship: many_to_one
+      type: left_outer
+      sql_on: ${play_player.player_id} = ${player.player_id}
 
 
 - explore: drive
@@ -46,6 +56,11 @@
       type: left_outer 
       sql_on: ${play_player.player_id} = ${player.player_id}
       relationship: many_to_one
+    
+    - join: game
+      type: left_outer
+      relationship: many_to_one
+      sql_on: ${play_player.gsis_id} = ${game.gsis_id}
 
 
 - explore: player

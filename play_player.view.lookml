@@ -231,10 +231,18 @@
     type: number
     sql: ${TABLE}.passing_att
 
+  - measure: passing_attempts
+    type: sum
+    sql: ${passing_att}
+    
   - dimension: passing_cmp
     type: number
     sql: ${TABLE}.passing_cmp
-
+    
+  - measure: passing_completions
+    type: sum
+    sql: ${passing_cmp}
+    
   - dimension: passing_cmp_air_yds
     type: number
     sql: ${TABLE}.passing_cmp_air_yds
@@ -250,6 +258,10 @@
   - dimension: passing_int
     type: number
     sql: ${TABLE}.passing_int
+    
+  - measure: interceptions
+    type: sum
+    sql: ${passing_int}
 
   - dimension: passing_sk
     type: number
@@ -278,6 +290,10 @@
   - dimension: passing_yds
     type: number
     sql: ${TABLE}.passing_yds
+    
+  - measure: passing_yards
+    type: sum
+    sql: ${passing_yds}
 
   - dimension: play_id
     type: number
@@ -340,6 +356,10 @@
   - dimension: receiving_rec
     type: number
     sql: ${TABLE}.receiving_rec
+    
+  - measure: receptions
+    type: sum
+    sql: ${receiving_rec}
 
   - dimension: receiving_tar
     type: number
@@ -348,6 +368,10 @@
   - dimension: receiving_tds
     type: number
     sql: ${TABLE}.receiving_tds
+    
+  - measure: receiving_touchdowns
+    type: sum
+    sql: ${receiving_tds}
 
   - dimension: receiving_twopta
     type: number
@@ -364,14 +388,26 @@
   - dimension: receiving_yac_yds
     type: number
     sql: ${TABLE}.receiving_yac_yds
+    
+  - measure: yards_after_catch
+    type: sum
+    sql: ${receiving_yac_yds}
 
   - dimension: receiving_yds
     type: number
     sql: ${TABLE}.receiving_yds
+  
+  - measure: receiving_yards
+    type: sum
+    sql: ${receiving_yds}
 
   - dimension: rushing_att
     type: number
     sql: ${TABLE}.rushing_att
+  
+  - measure: rushing_attempts
+    type: sum
+    sql: ${rushing_att}
 
   - dimension: rushing_loss
     type: number
@@ -384,6 +420,10 @@
   - dimension: rushing_tds
     type: number
     sql: ${TABLE}.rushing_tds
+    
+  - measure: rushing_touchdowns
+    type: sum
+    sql: ${rushing_tds}
 
   - dimension: rushing_twopta
     type: number
@@ -400,6 +440,10 @@
   - dimension: rushing_yds
     type: number
     sql: ${TABLE}.rushing_yds
+    
+  - measure: rushing_yards
+    type: sum
+    sql: ${rushing_yds}
 
   - dimension: team
     type: string
@@ -408,6 +452,10 @@
   - measure: count
     type: count
     drill_fields: detail*
+    
+  - measure: passing_touchdowns
+    type: sum
+    sql: ${passing_tds}
 
 
   # ----- Sets of fields for drilling ------
