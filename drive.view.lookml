@@ -3,11 +3,13 @@
   fields:
 
   - dimension: drive_id
+    description: "this is a really long description  this is a really long description  this is a really long description  this is a really long description"
     primary_key: true
     type: number
     sql: ${TABLE}.drive_id
 
   - dimension: end_field
+    description: "this one has a space before the quotes "
     type: string
     sql: ${TABLE}.end_field
 
