@@ -70,17 +70,5 @@
   - measure: count
     type: count
     drill_fields: [drive_id, agg_play.count, play.count, play_player.count]
-    
-  sets:
-   detail:
-    - id
-    - created_time
-    - users.name
-    - users.history
-    - total_cost_of_order
-    - this_does_not_exist
-# Counters for views that join 'orders'
-#       - order_items.count
-#       - products.list
 
 
