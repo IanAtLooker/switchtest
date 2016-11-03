@@ -1,1 +1,1 @@
-what if its different though
+this is a better readme
