@@ -1,1 +1,1 @@
-this is a better readme
+ now thats a readme
