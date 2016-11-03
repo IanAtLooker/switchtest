@@ -2,7 +2,7 @@
   sql_table_name: public.drive
   fields:
 
-  - dimension: drive_id
+  - dimension: drive_ids
     primary_key: true
     type: number
     sql: ${TABLE}.drive_id
