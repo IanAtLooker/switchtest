@@ -28,6 +28,7 @@
 
   - dimension: away_team
     type: string
+    full_suggetions: true
     sql: ${TABLE}.away_team
 
   - dimension: away_turnovers
@@ -76,6 +77,7 @@
 
   - dimension: home_team
     type: string
+    bypass_suggest_restrictions: yes
     sql: ${TABLE}.home_team
 
   - dimension: home_turnovers
@@ -84,7 +86,6 @@
 
   - dimension: season_type
     type: string
-    bypass_suggest_restrictions: yes
     sql: ${TABLE}.season_type
 
   - dimension: season_year
