@@ -29,6 +29,7 @@
   - dimension: away_team
     type: string
     full_suggetions: true
+    suggest_persist_for: 0 minutes
     sql: ${TABLE}.away_team
 
   - dimension: away_turnovers
@@ -79,6 +80,7 @@
     type: string
     bypass_suggest_restrictions: yes
     sql: ${TABLE}.home_team
+    suggest_persist_for: 0 minutes
 
   - dimension: home_turnovers
     type: number
