@@ -84,6 +84,7 @@
 
   - dimension: season_type
     type: string
+    bypass_suggest_restrictions: yes
     sql: ${TABLE}.season_type
 
   - dimension: season_year
