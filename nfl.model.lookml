@@ -32,7 +32,6 @@
 - explore: drive
 
 - explore: game
-  access_filter_fields: [game.season_type]
 
 - explore: meta
 
